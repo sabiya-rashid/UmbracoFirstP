@@ -1,0 +1,45 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.HomePage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+
+<main class="">
+    <div class="container px-4 px-lg-5">
+        <div class="flex-row flex gx-4 gx-lg-5 justify-content-center">
+            <div class="flex col-md-10 col-lg-8 col-xl-7 my-8 text-white">
+                <p class="bg-red-500 p-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur
+                    voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam
+                    ducimus consectetur?
+                </p>
+                <p class="bg-gray-300 p-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque
+                    architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae
+                    voluptatum in officia voluptas voluptatibus, minus!
+                </p>
+                <p class="bg-yellow-500 p-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi
+                    aliquid ex itaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste
+                    neque sit tempora!
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+@*<h2 class="text-3xl font-bold underline">@Model.Name</h2>
+<h1>@Model.Title</h1>
+
+@if(Model.Names != null && Model.Names.Any()){
+<ul>
+    @foreach(var name in Model.Names){
+    <li style="color:@Model.Colors;">@name</li>
+}
+</ul>
+}
+
+@if(Model.Image != null && !Model.HideImage){
+<img class="max-w-full my-4 w-1/2" alt="img" src="@Model.Image.Url()" />
+}
+
+@Model.BodyText*@
